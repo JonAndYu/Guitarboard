@@ -1,6 +1,7 @@
 # Fretnaut Front End Proof of concept
 
 In order to run this you need to run the fretnaut api: https://github.com/JonAndYu/FretNaut
+![image](https://github.com/JonAndYu/Guitarboard/assets/64448283/e872ca8a-055f-4d99-a539-ad1514ea8c59)
 
 ## Available Scripts
 
