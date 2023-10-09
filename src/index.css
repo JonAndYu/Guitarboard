@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +9,156 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  font-family: Inter, sans-serif;
+  height: 100vh;
+  background-color: #282D35;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.content {
+  padding: 1%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #21222A;
+  height: 90px;
+  padding: 30px 25px;
+}
+
+.nav--logo_text {
+  margin-right: auto;
+  color: whitesmoke;
+  font-weight: 700;
+  padding-left: 20px;
+  font-size: 48px;
+}
+
+.nav--github {
+  background-color: #21222A;
+  color: whitesmoke;
+  font-size: 24px;
+  border: none;
+}
+
+.nav--github:hover {
+  opacity: .85;
+}
+
+.controls {
+  background-color: #21222A;
+  opacity: 0.75;
+  height: 200px;
+  border-radius: 10px;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.form {
+  background-color: white;
+  border-radius: 10px;
+  width: 50%;
+  height: 100%;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form--input {
+  height: 50%;
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+.form--input label, .form--input input {
+  height: 100%; /* Set the height of label and input to 100% */
+  box-sizing: border-box; /* Include padding and border in the height calculation */
+  font-size: 24px;
+}
+
+.form--input input {
+  font-size: 36px;
+  width: calc(100%);
+  font-family: "Arial", sans-serif;
+  letter-spacing: 20px;
+}
+
+
+.instruction {
+  background-color: white;
+  border-radius: 10px;
+  width: 50%;
+  height: 100%;
+}
+
+.display {
+  background-color: #636ba8;
+  z-index: -10;
+  height: 475px;
+}
+
+.button--container {
+  display: flex;
+  width: 100%; /* Set the width of the button container to 50% */
+  padding: 10px;
+  height: 50%;
+}
+
+.button--container .btn {
+  background-color: #21222A;
+  color: whitesmoke;
+  font-size: 24px;
+  border: none;
+  margin-right: 10px;
+  width: 50%; /* Set the width of each button to 50% of the container */
+  height: 100%;
+}
+
+.button--container .btn:last-child {
+  margin-right: 0;
+}
+
+.string {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.string::after {
+  content: '';
+  position: absolute;
+  top: 46%; /* Adjust this value to position the line accordingly */
+  width: 90%;
+  height: 4px;
+  z-index: 0;
+  background-color: black; /* You can set the line color as needed */
+}
+
+.dot {
+  height: 50px;
+  width: 50px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  font-size: 24px;
+}
+
+.line {
+  border-bottom: 1px solid black; /* Adjust style and color as needed */
+  width: 100%; /* Make it span the entire width of the container */
+  margin-top: 10px; /* Adjust margin as needed */
+  z-index: -1;
 }
